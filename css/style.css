@@ -343,20 +343,6 @@ i {
     line-height : 1.5;
 }
 
-@media (max-width: 768px) {
-    .adventure .box-container {
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-            "big-top"
-            "small-bottom"
-            "right";
-    }
-    
-    .adventure .box-container .box:nth-child(3) {
-        height: 25rem;
-    }
-}
-
 
 /* -------Card Service------- */
 .card {
@@ -847,9 +833,9 @@ i {
 
 .footer .credit {
   text-align: center;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
   padding: 1rem;
-  padding-top: 2.5rem;
+  padding-top: 2rem;
   font-size: 2rem;
   color: #fff;
 }
@@ -938,6 +924,22 @@ i {
     flex-direction: column;
     width: 70vw;
   }
+
+  .gallery-list {
+    grid-template-columns: 1fr 1fr;
+}
+.adventure .box-container {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "big-top"
+            "small-bottom"
+            "right";
+        height: auto;
+    }
+    
+    .adventure .box-container .box:nth-child(3) {
+        height: 25rem;
+    }
 }
 
 @media (max-width: 450px) {
